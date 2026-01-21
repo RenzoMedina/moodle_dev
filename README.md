@@ -6,9 +6,6 @@ Este proyecto proporciona un entorno completo para ejecutar Moodle utilizando Do
 - Volúmenes persistentes
 - Configuración modular y fácil de extender
 
-
-
-
 ## 🚀 Requisitos previos
 
 Asegúrate de tener instalado:
@@ -16,7 +13,6 @@ Asegúrate de tener instalado:
 - Docker
 - Docker Compose
 - Git (opcional, si clonas el repositorio)
-
 
 ## 📁 Estructura del proyecto
 
@@ -26,18 +22,14 @@ Asegúrate de tener instalado:
 
 ```
 
-
 ## ⚙️ Configuración inicial
 
 - clona el repositorio
 
 ``` bash
-git clone <tu-repo>
-cd <tu-repo>
+git clone https://github.com/RenzoMedina/moodle_dev
+cd moodle_dev
 ```
-
-
-
 
 ## ▶️ Levantar el entorno
 
@@ -84,7 +76,6 @@ Si usas MariaDB/MySQL:
   docker exec -it <nombre-contenedor-db> mysql -u root -p
 
 ```
-
 
 ## Authors
 - Backend Developer & DevOps Jr

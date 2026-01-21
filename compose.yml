@@ -1,4 +1,5 @@
 services:
+  #database
   db:
     image: mariadb:10.11
     container_name: moodle_db
@@ -20,6 +21,7 @@ services:
     networks:
       - moodle_network
 
+  #moodle
   moodle:
     build: .
     container_name: moodle_app
@@ -42,6 +44,7 @@ services:
     networks:
       - moodle_network
 
+#data persistence
 volumes:
   db_data:
     driver: local
@@ -50,6 +53,7 @@ volumes:
   moodle_html: 
     driver: local
 
+#networks
 networks:
   moodle_network:
     driver: bridge
